@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Management</title>
+</head>
+<body>
+    <div id="content">
+        <div>
+            {% include 'sidebars.html' %}
+        </div>
+        <div>
+            {% include 'task_table.html' %}
+        </div>
+        {%load static  %}
+        <script src="{% static '/js/sidebar.js' %}" type="text/javascript"></script>  
+        
+    </div>
+</body>
+</html>

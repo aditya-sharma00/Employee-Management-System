@@ -1,0 +1,17 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/sidebar.css' %}">
+<div class="sidebar">
+    <div class="sidebar-header">
+      <img class="profile-image" src="{{user.image.url}}" alt="My image">
+      <h3>{{name}}</h3>
+    </div>
+
+    <ul class="sidebar-menu">
+      <li><a href="{% url 'emphome'%}">Home</a></li>
+      <li><a href="#">Notice</a></li>
+      <li><a href="{% url 'update_profile'%}">Profile Update</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="{% url 'logout' %}">Logout</a></li>
+    </ul>
+</div>

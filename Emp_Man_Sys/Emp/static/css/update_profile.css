@@ -1,0 +1,77 @@
+/* Center the form vertically and horizontally */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Style the form container with a boundary */
+.profile-update-field {
+    width: 600px; /* Adjust the width as needed */
+    height: 450px; /* Adjust the width as needed */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff; /* Optional: Add a background color */
+}
+
+/* Style the form elements */
+.profile-update-field input[type="text"],
+.profile-update-field input[type="tel"],
+.profile-update-field input[type="email"],
+.profile-update-field input[type="password"],
+.profile-update-field input[type="file"],
+.profile-update-field input[type="file"],
+.profile-update-field input[type="file"]
+ {
+    width: 97%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.profile-update-field input[type="submit"]
+{
+    width: 98%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+/* Style the submit button */
+.profile-update-field input[type="submit"] {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Optional: Style the boundary container's background color */
+body {
+    background-color: #f0f0f0; /* Adjust as needed */
+}
+/* Style the select element */
+.profile-update-field select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Style the option elements within the select */
+.profile-update-field select option {
+    padding: 5px;
+    background-color: #fff; /* Optional: Add a background color for options */
+    color: #333; /* Optional: Customize text color for options */
+}
+
+/* Style the selected option when the dropdown is active */
+.profile-update-field select:focus {
+    border-color: #007BFF; /* Change border color when focused */
+    outline: none; /* Remove the default focus outline */
+}

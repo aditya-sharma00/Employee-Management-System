@@ -1,0 +1,38 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/task.css' %}">
+
+<table>
+  <thead>
+    <tr>
+      <th>Task Number</th>
+      <th>Task Name</th>
+      <th>Task Description</th>
+      <th>Task Submission Date</th>
+      <th>Document</th>
+      <th>File Submission</th>
+      <th>Submit Button</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for task in assigned_tasks %}
+    <tr>
+      <td>{{ forloop.counter }}</td>
+      <td>{{ task.task_name }}</td>
+      <td>{{ task.task_description }}</td>
+      <td>{{ task.task_submission_date }}</td>
+      <td>
+        {% if task.file_submission %}
+          <a href="{{ task.file_submission.url }}" target="_blank">View Document</a>
+        {% else %}
+          No document available
+        {% endif %}
+      </td>
+      <td>
+        <input type="file" name="file_submission_{{ forloop.counter }}">
+      </td>
+      <td><button type="submit">Submit</button></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

@@ -1,0 +1,34 @@
+/* styles.css */
+/* styles.css */
+table {
+  border-collapse: collapse;
+  width: calc(100% - 220px); /* Adjust the width calculation */
+  margin-left: 220px; /* Add margin to the left side */
+  float: right; /* Float the table to the right side */
+}
+
+/* ... (Rest of your CSS) */
+
+  th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Add styling for the Status column */
+  td.status {
+    background-color: #5BC0DE; /* Change color as needed */
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+  
